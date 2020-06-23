@@ -1,0 +1,27 @@
+"""1-'Write a program which will find all such numbers which are divisible by 7 but are not amultiple of 5, \nbetween 2000 and 3200 (both included). The numbers obtained should be printed\nin a comma-separated sequence on a single line'
+
+ANSWER:
+
+Solution -1"""
+
+print(*([i for i in [i for i in range(2000,3200+1) if i % 7==0 ] if i%5!=0]),sep=" ")
+"""Solution -2"""
+print(*([i for i in range(2000,3200+1) if i%7 == 0 and i%5!=0]),sep=",")
+"""Solution-3"""
+for i in range(2000,3200+1):
+    if i%7 == 0 and i%5!=0:
+        print(i,end=',')
+"""NO-2-
+ Write a Python program to accept the user's first and last name and then getting them printed in the the reverse order with a space between first name and last name.
+Solution:"""
+n=list(input("Enter the input:"))
+print("".join(n[::-1]))
+"""NO-3.
+ Write a Python program to find the volume of a sphere with diameter 12 cm.
+Solution:"""
+V= d=12
+r=d/2
+pie=22/7
+v= [4/3*pie*r**3]
+print('The volume of the sphere is: ',v)
+
