@@ -79,4 +79,40 @@ for x in a:
         uniq_items.append(x)
         dup_items.add(x)
 print(dup_items)
-        
+ # Python-Basic-programme
+#This file contain python basic program 
+"""NO-1:
+Python program to add two numbers"""
+a=int(input("enter the number:"))
+b=int(input("enter the number:"))
+c=a+b
+print("the adding of {0},{1} are {2}.".format(a,b,c))
+""" factorial of given number """
+def factorial(n): 
+    if n < 0: 
+        return 0
+    elif n == 0 or n == 1: 
+        return 1
+    else: 
+        fact = 1
+        while(n > 1): 
+            fact *= n 
+            n -= 1
+        return fact 
+ """ Python Program for simple interest"""
+p=int(input("enter the priniciple amount:"))
+t=int(input("enter the time  period:"))
+r=int(input("enter the rate of intrest:"))
+si=p*t*r/100
+print("The simple intrest is ",si)
+
+""" Python Program for compound interest"""
+def compound_intrest(p,r,t):
+    ci=round(p*pow((1+r/100),t))
+    return ci
+def compound_intrest(p,r,t):
+    ci=round(p*pow((1+r/100),t))
+    return ci
+compound_intrest(100,10,2)
+121
+""" 
